@@ -36,11 +36,11 @@ Deployment Plan
   * 
 2.- Configure ServerName
   * `sudo pico /etc/apache2/conf.d/security`
+  * Uncomment all from < Directory > to < Directory /> and add `Options FollowSymLinks` at the end of the list
   * Below "< Directory />" add the following line:
     * `ServerName theNameOfTheServer`
   * `sudo service apache2 restart`
-  * Uncomment all from <Directory> to < Directory /> and add `Options FollowSymLinks` at the end of the list
-  
+
 
 ###Setup Github
 1.- Use apt-get to install git-core

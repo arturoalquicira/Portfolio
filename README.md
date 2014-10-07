@@ -58,7 +58,7 @@ Deployment Plan
   * Re-enter a passphrase
 
 4.- Copy github key from id_res.pub file and paste it into SSH keys under Account Settings 
-  * `less ~/.ssh/id_rsa.pub
+  * `less ~/.ssh/id_rsa.pub`
 
 5.- Check if github works
   * `ssh git@github.com`

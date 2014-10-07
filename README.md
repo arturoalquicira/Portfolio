@@ -26,7 +26,8 @@ Deployment Plan
   * 
 2.- Configure ServerName
   * sudo pico /etc/apache2/conf.d/security
-  * ServerName **theNameOfTheServer**
+  * Below "< Directory />" add the following line:
+    * ServerName **theNameOfTheServer**
   
 
 ###Setup Github

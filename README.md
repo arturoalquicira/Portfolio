@@ -16,7 +16,7 @@ Deployment Plan
   * `adduser USERNAME`
   
 5.- Add your new username to the sudo group 
-  * `adduser USERNAME sudo`
+  * `sudo adduser USERNAME sudo`
   
 6.- `exit`
 

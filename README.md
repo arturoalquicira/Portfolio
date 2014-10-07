@@ -13,7 +13,7 @@ Deployment Plan
 3.- Enter root password
 
 4.- Create  a user name and password 
-  * `adduser USERNAME``
+  * `adduser USERNAME`
   
 5.- Add your new username to the sudo group 
   * `adduser USERNAME sudo`
@@ -24,6 +24,11 @@ Deployment Plan
   * (ex. `ssh username@118.0.0.1`)
   
 8.- Enter username password
+
+9.- Run commands to update your server
+  * `sudo apt-get update`
+  * `sudo apt-get upgrade`
+  * `sudo apt-get update`
 
 ###Setup Apache2
 1.-Use apt-get to install apache2

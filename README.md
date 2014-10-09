@@ -66,6 +66,40 @@ Deployment Plan
 
 Git Hooks and Production Deployment
 ===
+
+###Configure Git Hooks 
+1.- Go to folder ../var/
+  *  `sudo chown username ./www/`
+  *  `rm index.html`
+ 
+2.- Go back to ../var directory and create "repos" folder
+  * `cd ../`
+  * `sudo mkdir repos`
+  * `sudo chown username repos`
+  *  `cd repos/`
+
+3.- Create a '.git' folder in your "repos" folder 
+  * `mkdir nameProduction/Staging.git`
+  *  `cd nameProduction/Staging.git`
+
+4.- Inside your '.git' folder initialize bare git and move into "/hooks" folder
+  * `git init --bare`
+  * `cd hooks/`
+
+5.- Inside "/hooks" folder, create this executable file
+  * `pico post-receive`
+  *  Then type the following lines
+    * `#!/bin/sh`
+    * `GIT_WORK_TREE=/var/www git checkout -f`
+  * `chmod +x post-receive` **you need this path**
+
+6.- Add remotes - Open a new terminal window and narrow down to your project folder or directory
+  * `git init`
+  * `git remote add varName(name of the server) ssh://userName@104.31.1.1/var/respos/folderName.git`
+  * `git push varName master`
+  
+
+ 
   
 
 

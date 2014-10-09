@@ -33,7 +33,6 @@ Deployment Plan
 ###Setup Apache2
 1.-Use apt-get to install apache2
   * `sudo apt-get install apache2`
-  * 
   
 2.- Configure ServerName
   * `sudo pico /etc/apache2/conf.d/security`

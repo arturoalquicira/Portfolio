@@ -79,8 +79,8 @@ Git Hooks and Production Deployment
   *  `cd repos/`
 
 3.- Create a '.git' folder in your "repos" folder 
-  * `mkdir nameProduction/Staging.git`
-  *  `cd nameProduction/Staging.git`
+  * `mkdir folderName.git` 
+  *  `cd folderName.git`
 
 4.- Inside your '.git' folder initialize bare git and move into "/hooks" folder
   * `git init --bare`

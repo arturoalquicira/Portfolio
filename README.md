@@ -31,7 +31,7 @@ Deployment Plan
   * `sudo apt-get update`
 
 ###Setup Apache2
-1.-Use apt-get to install apache2
+1.- Use apt-get to install apache2
   * `sudo apt-get install apache2`
   
 2.- Configure ServerName
@@ -39,6 +39,12 @@ Deployment Plan
   * Uncomment all from < Directory > to < Directory /> and add `Options FollowSymLinks` at the end of the list
   * Below "< Directory />" add the following line:
     * `ServerName theNameOfTheServer`
+  * `sudo service apache2 restart`
+ OR
+2.1.- Configure ServerName Globally
+  * `sudo pico /etc/apache2/apache2.conf`
+  * Below "< Directory />" add the following line:
+    *`ServerName theNameOfTheServer`
   * `sudo service apache2 restart`
 
 

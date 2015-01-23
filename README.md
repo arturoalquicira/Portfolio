@@ -45,8 +45,8 @@ Deployment Plan
 
 2.1.- Configure ServerName Globally
   * `sudo pico /etc/apache2/apache2.conf`
-  * Below "< Directory />" add the following line:
-    *`ServerName theNameOfTheServer`
+  * Below the first "< Directory />" add the following line:
+    * `ServerName theNameOfTheServer`
   * `sudo service apache2 restart`
 
 

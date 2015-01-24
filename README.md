@@ -99,7 +99,7 @@ Git Hooks and Production Deployment
   * `pico post-receive`
   *  Then type the following lines
     * `#!/bin/sh`
-    * `GIT_WORK_TREE=/var/www git checkout -f`
+    * `GIT_WORK_TREE=/var/www/html git checkout -f`
   * `chmod +x post-receive` **you need this path**
 
 6.- Add remotes - Open a new terminal window and narrow down to your project folder or directory

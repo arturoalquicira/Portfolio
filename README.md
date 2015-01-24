@@ -76,8 +76,8 @@ Git Hooks and Production Deployment
 ===
 
 ###Configure Git Hooks 
-1.- Go to folder ../var/
-  *  `sudo chown username ./www/`
+1.- Go to folder ../var/www/
+  *  `sudo chown username ./html/`
   *  `rm index.html`
  
 2.- Go back to ../var directory and create "repos" folder

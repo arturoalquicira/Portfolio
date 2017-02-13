@@ -35,15 +35,13 @@ Deployment Plan
   * `sudo apt-get install apache2`
   
 2.- Configure ServerName
-  * `sudo pico /etc/apache2/conf.d/security`
-  * Uncomment all from < Directory > to < Directory /> and add `Options FollowSymLinks` at the end of the list
-  * Below "< Directory />" add the following line:
-    * `ServerName theNameOfTheServer`
-  * `sudo service apache2 restart`
-  
- OR
-
-2.1.- Configure ServerName Globally
+  * `sudo vi /etc/apache2/conf-available/servername.conf`
+  * And inside this we just need to add one line
+  * `ServerName server-name`
+  * Next you have to enable this configuration
+  * `sudo a2enconf servername
+  
+3.- Configure ServerName Globally
   * `sudo pico /etc/apache2/apache2.conf`
   * Below the first "< Directory />" add the following line:
     * `ServerName theNameOfTheServer`

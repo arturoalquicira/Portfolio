@@ -43,7 +43,7 @@ Deployment Plan
   * `sudo a2enconf servername`
 
 4.- Reload the server
-  * `sudo service apache2 reload`
+  * `sudo service apache2 reload`
     
 ###Setup Github
 1.- Use apt-get to install git-core

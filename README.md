@@ -44,7 +44,7 @@ Deployment Plan
 
 4.- Reload the server
   * `sudo service apache2 reload`
-    
+  
 ###Setup Github
 1.- Use apt-get to install git-core
   * `sudo apt-get install git-core`

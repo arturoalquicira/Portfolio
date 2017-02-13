@@ -37,10 +37,14 @@ Deployment Plan
 2.- Configure ServerName
   * `sudo vi /etc/apache2/conf-available/servername.conf`
   * And inside this we just need to add one line
-  * `ServerName server-name`
-  * Next you have to enable this configuration 
+  * `ServerName your-server-name`
+
+3.- Enable servername configuration
   * `sudo a2enconf servername`
-  
+
+4.- Reload the server
+  * `sudo service apache2 reload`
+    
 ###Setup Github
 1.- Use apt-get to install git-core
   * `sudo apt-get install git-core`

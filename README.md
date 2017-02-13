@@ -39,7 +39,7 @@ Deployment Plan
   * And inside this we just need to add one line
   * `ServerName server-name`
   * Next you have to enable this configuration
-  * `sudo a2enconf servername
+  * `sudo a2enconf servername`
   
 3.- Configure ServerName Globally
   * `sudo pico /etc/apache2/apache2.conf`

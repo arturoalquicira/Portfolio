@@ -105,7 +105,7 @@ Git Hooks and Production Deployment
 
 6.- Add remotes - Open a new terminal window and narrow down to your project folder or directory
   * `git init`
-  * `git remote add varName(name of the server) ssh://userName@104.31.1.1/var/respos/folderName.git`
+  * `git remote add varName(name of the server) ssh://userName@104.31.1.1/var/repos/folderName.git`
   * `git push varName master`
   
 

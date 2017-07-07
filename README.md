@@ -38,6 +38,7 @@ Deployment Plan
   * `sudo vi /etc/apache2/conf-available/servername.conf`
   * And inside this we just need to add one line
   * `ServerName your-server-name`
+  * Esc + :x
 
 3.- Enable servername configuration
   * `sudo a2enconf servername`

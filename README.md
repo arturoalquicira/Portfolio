@@ -101,6 +101,7 @@ Git Hooks and Production Deployment
   *  Then type the following lines
     * `#!/bin/sh`
     * `GIT_WORK_TREE=/var/www/html git checkout -f`
+    * ctrl + x *to exit*
   * `chmod +x post-receive` **you need this path**
   
 Continue *only* if you are using Github|Git

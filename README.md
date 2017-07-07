@@ -76,7 +76,8 @@ Git Hooks and Production Deployment
   *  `sudo chown username ./html/`
   * Go to folder ../var/www/html
   *  `ls -l`
-  *  `rm index.html`
+  *  `cd html/`
+  *  `rm index.html`
  
 2.- Go back to ../var directory and create "repos" folder
   * `cd ../`

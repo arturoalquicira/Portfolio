@@ -102,7 +102,7 @@ Git Hooks and Production Deployment
     * `GIT_WORK_TREE=/var/www/html git checkout -f`
   * `chmod +x post-receive` **you need this path**
   
-Continue if you are using Github|Git
+Continue *only* if you are using Github|Git
 ---
 
 6.- Add remotes - Open a new terminal window and narrow down to your project folder or directory

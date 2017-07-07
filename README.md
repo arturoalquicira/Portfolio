@@ -4,7 +4,7 @@ Portfolio
 Deployment Plan
 ===
 
-###Setup Server
+### Setup Server
 1.- Create a new droplet
 
 2.- Acces via terminal 
@@ -30,7 +30,7 @@ Deployment Plan
   * `sudo apt-get upgrade`
   * `sudo apt-get update`
 
-###Setup Apache2
+### Setup Apache2
 1.- Use apt-get to install apache2
   * `sudo apt-get install apache2`
   
@@ -45,7 +45,7 @@ Deployment Plan
 4.- Reload the server
   * `sudo service apache2 reload`
   
-###Setup Github
+### Setup Github
 1.- Use apt-get to install git-core
   * `sudo apt-get install git-core`
 
@@ -70,7 +70,7 @@ Deployment Plan
 Git Hooks and Production Deployment
 ===
 
-###Configure Git Hooks 
+### Configure Git Hooks 
 1.- Go to folder ../var/www/
   *  `sudo chown username ./html/`
   * Go to folder ../var/www/html

@@ -104,6 +104,23 @@ Git Hooks and Production Deployment
     * ctrl + x *to exit*
   * `chmod +x post-receive` **you need this path**
   
+Setup Sourcetree
+---
+
+1.- Create *local repository*
+
+2.- Create empty folder with the name of the server
+
+3.- Go to respository settings inside the local repo
+
+4.- Add remote repository and insert a path like this one:
+
+5.- `ssh://pipo@104.259.91.62/var/repos/site-prod.git`
+
+6.- start commiting and pushing to master
+
+
+
 Continue *only* if you are using Github|Git
 ---
 

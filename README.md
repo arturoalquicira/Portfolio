@@ -46,6 +46,8 @@ Deployment Plan
 4.- Reload the server
   * `sudo service apache2 reload`
   
+5.- Go straight to **Git Hooks**
+  
 ### Setup Github
 1.- Use apt-get to install git-core
   * `sudo apt-get install git-core`
@@ -79,15 +81,15 @@ Git Hooks and Production Deployment
   *  `cd html/`
   *  `rm index.html`
  
-2.- Go back to ../var directory and create "repos" folder
-  * `cd ../`
+2.- Go back to **../var** directory and create "repos" folder
+  * Inside ../var folder:
   * `sudo mkdir repos`
   * `sudo chown username repos`
   *  `cd repos/`
 
 3.- Create a '.git' folder in your "repos" folder 
-  * `mkdir folderName.git` 
-  *  `cd folderName.git`
+  * `mkdir folder-Name.git` (site-prod.git is recommendable as a name)
+  *  `cd folder-Name.git`
 
 4.- Inside your '.git' folder initialize bare git and move into "/hooks" folder
   * `git init --bare`
@@ -99,6 +101,9 @@ Git Hooks and Production Deployment
     * `#!/bin/sh`
     * `GIT_WORK_TREE=/var/www/html git checkout -f`
   * `chmod +x post-receive` **you need this path**
+  
+Continue if you are using Github|Git
+---
 
 6.- Add remotes - Open a new terminal window and narrow down to your project folder or directory
   * `git init`
